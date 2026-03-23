@@ -10,7 +10,7 @@ exports.analyzeCode = async (code, language) => {
      throw new Error("Gemini API key is not configured.");
   }
   
-  const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
+  const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
 
   const prompt = `
   You are an expert Senior Software Engineer and Performance Specialist. Review the following ${language} code and provide a JSON response STRICTLY matching this exact structure:
